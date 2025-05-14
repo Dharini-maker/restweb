@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+/* Header */
+header {
+    background-color: #2F4F4F;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F3E5AB;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #F3E5AB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2F4F4F;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Shared Section Styles */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #F3E5AB;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Boxed Image Style (Common) */
+.box {
+    background-color: #FFFFFF;
+    color: #000;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.box h3 {
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    margin: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F3E5AB;
+    color: #000;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+}
